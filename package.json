@@ -2,7 +2,7 @@
     "name": "demo3",
     "version": "7.2.9",
     "private": true,
-    "homepage": "https://enkhamar.github.io/barlo",
+    "homepage": ".",
     "scripts": {
         "start": "react-scripts start -o",
         "build": "react-scripts build",
