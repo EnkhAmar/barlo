@@ -11,32 +11,10 @@ import {
   ListsWidget14,
   AdvanceTablesWidget9,
 } from "../widgets";
-// import firebase from './firebase.config';
-import Firebase from './firebase.config';
 export function Demo3Dashboard() {
 
   const [blogs, setBlogs] = React.useState([])
 
-  // const ref = firebase.firestore().collection('testfirebase-f276f');
-
-  React.useEffect(() => {
-    console.log('My use effect called');
-
-    fetchBlogs();
-
-  }, []);
-
-  const fetchBlogs = async () => {
-
-    const firebase = new Firebase();
-    firebase.db
-       .collection("tempData")
-       .get()
-       .then(async querySnapshot => {
-         // do something here
-         await console.log('querySnapshot :>> ', querySnapshot);
-       });
-  }
 
   return (
     <>
